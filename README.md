@@ -3,6 +3,10 @@
 Typescript ReactJS component port for generating personalized cartoon avatars
 See original tool at www.getavataaars.com
 
+### Example Output to Screen
+
+![Avatars](docs/images/sample-avatars.jpg)
+
 ### Example Usage
 
 ```typescript jsx
@@ -50,8 +54,7 @@ const App: React.FC = () => {
     return (
       <div className="App">
         Cartoon Avatar
-        <br />
-        {/*<div style={styles}>*/}
+        <br />        
         <Avatar
           id="myAvatar"
           settings={settings}
@@ -82,8 +85,7 @@ const App: React.FC = () => {
           settings={randomizeAvatar()}
           style={{ width: 300, height: 300 }}
         />
-        {a.map(v=>v)}
-        {/*</div>*/}
+        {a.map(v=>v)}        
         <canvas
           id="myCanvas"
           width={280}
@@ -97,7 +99,3 @@ const App: React.FC = () => {
 
 export default App
 ```
-
-### Example Output to Screen
-
-![Avatars](docs/images/sample-avatars.jpg)
